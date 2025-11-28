@@ -19,34 +19,28 @@ export default function Navigation() {
   }, [isEntered]);
 
   return (
-    <div className="w-full h-screen bg-transparent absolute flex items-center pl-20 top-0 left-0">
       <div
-        className="w-[500px] h-[250px] bg-amber-200 container rounded-lg flex flex-col px-5"
-        onMouseEnter={() => setIsEntered((prev) => !prev)}
-        onMouseOut={() => setIsEntered((prev) => !prev)}
+        className={`w-[500px] h-[250px] absolute z-30 backdrop-blur-2xs top-1/4 left-20`}
       >
-        <div className="w-full h-full flex flex-col justify-evenly" onMouseOver={(e)=> e.stopPropagation()}>
+        <div
+          className="w-full h-full flex flex-col justify-evenly text-shadow-md"
+        >
           {liste.map((item, index) => (
             <Link
               key={index}
               href={item.link}
-              onMouseEnter={(e) => {
-                e.stopPropagation();
-                console.log(index + 2);
-              }}
               className={`${
                 pathname === item.link
                   ? "opacity-100 border-white"
-                  : "opacity-50"
+                  : "opacity-70"
               } font-bold tracking-widest text-xl w-[80%] py-1 rounded-2xl px-${
                 index + 2
-              } hover:opacity-100 transition-all`}
+              } hover:opacity-100 transition-all mix-blend-difference text-white`}
             >
               {item.name}
             </Link>
           ))}
         </div>
       </div>
-    </div>
   );
 }
