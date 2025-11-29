@@ -15,7 +15,7 @@ export default function home() {
           setopen();
           console.log(open);
         }}
-        className="absolute top-1 left-1 z-50"
+        className="absolute md:hidden top-1 left-1 z-50"
       >
         <Sidebar />
       </Button>
