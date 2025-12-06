@@ -96,10 +96,10 @@ export default function Section1() {
             </span>
           </h1>
           <p className="w-1/2 text-center hidden lg:flex justify-center m-auto text-white">
-            search l'hotel Lorem ipsum dolor sit amet consectetur adipisicing
+            {`search l'hotel Lorem ipsum dolor sit amet consectetur adipisicing
             elit. Aut incidunt aspernatur quibusdam maxime unde aperiam eos
             officiis velit recusandae dolorem! de tes reves avec la meilleuur
-            attraction de tout douala cameroun{" "}
+            attraction de tout douala cameroun`}
           </p>
         </div>
         <div className="absolute w-[95%] mx-auto shadow-xl bottom-2 h-50 rounded-2xl hidden lg:flex left-0 right-0 bg-white">
@@ -113,13 +113,13 @@ export default function Section1() {
                   </SelectTrigger>
                   <SelectContent className="w-full">
                     <SelectItem value="bepanda">
-                      Bependa Commissariat du 7eme
+                      {`Bependa Commissariat du 7eme`}
                     </SelectItem>
                     <SelectItem value="bepanda">
-                      kotto derriere l'aval
+                      {`kotto derriere l'aval`}
                     </SelectItem>
                     <SelectItem value="bepanda">
-                      Bependa Commissariat du 7eme
+                      {`Bependa Commissariat du 7eme`}
                     </SelectItem>
                   </SelectContent>
                 </Select>
@@ -216,13 +216,13 @@ export default function Section1() {
                   </SelectTrigger>
                   <SelectContent className="w-full">
                     <SelectItem value="bepanda">
-                      Bependa Commissariat du 7eme
+                      {`Bependa Commissariat du 7eme`}
                     </SelectItem>
                     <SelectItem value="bepanda">
-                      kotto derriere l'aval
+                      {`kotto derriere l'aval`}
                     </SelectItem>
                     <SelectItem value="bepanda">
-                      Bependa Commissariat du 7eme
+                      {`Bependa Commissariat du 7eme`}
                     </SelectItem>
                   </SelectContent>
                 </Select>

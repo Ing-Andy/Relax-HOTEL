@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import Entete from "./Entete";
 import { CookingPotIcon, HandHeart, Smile } from "lucide-react";
 import { Button } from "./ui/button";
@@ -9,7 +8,6 @@ export default function Section2() {
   {
     /* section1 */
   }
-  const [inputvisible, setInputVisible] = useState<boolean>(false);
   
   const block1 = [
     {
