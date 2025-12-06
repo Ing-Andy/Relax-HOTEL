@@ -1,3 +1,6 @@
+// locales/en.ts
 export default {
-    hello: "Bonjour",
-} as const;
+  'hello': 'salut',
+  'hello.world': 'bonjour le monde!',
+  'welcome': 'salut {name}!'
+} as const
