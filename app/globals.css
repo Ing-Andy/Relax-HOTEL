@@ -137,6 +137,6 @@
   border: none; /* enlève la bordure */
 }
 
-.scrollbar-hidden {
+.scrollbar-none {
   scrollbar-width: none;
 }
