@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 import Entete from "./Entete";
 import { CookingPotIcon, HandHeart, Smile } from "lucide-react";
@@ -12,13 +10,7 @@ export default function Section2() {
     /* section1 */
   }
   const [inputvisible, setInputVisible] = useState<boolean>(false);
-  const navList = [
-    { name: "home", lien: "/" },
-    { name: "about Us", lien: "/aboutUs" },
-    { name: "services", lien: "/services" },
-    { name: "facilites", lien: "/facilites" },
-    { name: "membership", lien: "/membership" },
-  ];
+  
   const block1 = [
     {
       title: "Contemporary cuisine",
