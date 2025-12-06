@@ -1,20 +1,22 @@
+// components/selectLangue.tsx
 "use client"
-import { useChangeLocale, useCurrentLocale } from "@/locales/clients";
+import { useChangeLocale, useCurrentLocale } from "@/locales/client";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 
 export default function SelectLangue() {
-    const locale = useCurrentLocale();
-    const setValue = useChangeLocale();
-    
-    return (
-        <Select value={locale} onValueChange={(value: "fr" | "en") => setValue(value)}>
-            <SelectTrigger className="min-w-30 ">
-                <SelectValue />
-            </SelectTrigger>
-            <SelectContent content="w-max">
-                <SelectItem value="fr">Français</SelectItem>
-                <SelectItem value="en">English</SelectItem>
-            </SelectContent>
-        </Select>
-    )
+  const changeLocale = useChangeLocale();
+  const locale = useCurrentLocale();
+
+  return (
+    <Select value={locale} onValueChange={changeLocale}>
+      <SelectTrigger className="w-[180px]">
+        <SelectValue placeholder="Langue" />
+      </SelectTrigger>
+      <SelectContent>
+        <SelectItem value="en">English</SelectItem>
+        <SelectItem value="fr">Français</SelectItem>
+        {/* Ajoute d'autres langues selon ta config */}
+      </SelectContent>
+    </Select>
+  );
 }
